@@ -53,12 +53,6 @@ function detectPersonalLevel() {
 
 detectPersonalLevel();
 
-// function showMyDB() {
-//     if (personalMovieDB.privat) {
-//         console.log(personalMovieDB);
-//     }
-// }
-
 function showMyDB (hidden) {
     if (!hidden) {
         console.log(personalMovieDB);
@@ -69,8 +63,7 @@ showMyDB(personalMovieDB.privat);
 
 function writeYourGenres() {
     for (let i = 1; i <= 3; i++) {
-        let genre = prompt(`Ваш любимый жанр под номером ${i}`, '');
-        personalMovieDB.genres[i - 1] = genre;
+        personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`, '');
     }
 }
 
@@ -86,3 +79,4 @@ console.log(personalMovieDB);
 // Для среза строки можно использовать substring (не работает с отрицательными значениями)
 // и substr (вместо последнего символа указывается необходимая длинна среза).
 
+// Ещё одно изменение
