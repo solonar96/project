@@ -17,17 +17,14 @@ const personalMovieDB = {
     movies: {},
     actors: {},
     genres: [],
-    privat: false
+    private: false
 };
 
 function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
         let a = prompt('Один из последних просмотренных фильмов?', ''),
             b = prompt('На сколько оцените его?', '');
-        // if (a === null || a === false || a.length > 50 || b === null || b === false || b.length > 50) {
-        //     a = prompt('Один из последних просмотренных фильмов?', ''),
-        //     b = prompt('На сколько оцените его?', '');
-        if (a != null && b != null && a != '' && b != '' && a.length <= 50 && b.length <= 50) {
+        if (a && b && a.length <= 50 && b.length <= 50) {
             personalMovieDB.movies[a] = b;
             console.log('done');
         } else {
@@ -59,7 +56,7 @@ function showMyDB (hidden) {
     }
 }
 
-showMyDB(personalMovieDB.privat);
+showMyDB(personalMovieDB.private);
 
 function writeYourGenres() {
     for (let i = 1; i <= 3; i++) {
@@ -78,5 +75,3 @@ console.log(personalMovieDB);
 
 // Для среза строки можно использовать substring (не работает с отрицательными значениями)
 // и substr (вместо последнего символа указывается необходимая длинна среза).
-
-// Ещё одно изменение
