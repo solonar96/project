@@ -67,6 +67,8 @@ const personalMovieDB = {
     }
 };
 
+
+
 // personalMovieDB.start();
 
 // personalMovieDB.rememberMyFilms();
@@ -75,7 +77,7 @@ const personalMovieDB = {
 
 // personalMovieDB.showMyDB(personalMovieDB.private);
 
-personalMovieDB.writeYourGenres();
+// personalMovieDB.writeYourGenres();
 
 // personalMovieDB.toggleVisibleMyDB(personalMovieDB.private);
 
