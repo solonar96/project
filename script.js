@@ -83,7 +83,7 @@ const personalMovieDB = {
 
 // personalMovieDB.showMyDB(personalMovieDB.private);
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
 // Срез строки работает и без последнего символа:
 // если таким образом указать, то обрезано будет с данного символа и до конца.
